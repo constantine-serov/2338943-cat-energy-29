@@ -126,9 +126,13 @@
   }
 
   &--form {
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      .text(Oswald, 14px, 18px, #000000);
+    }
     @media (min-width: 768px) {
       .text(Oswald, 20px, 30px, #000000);
     }
-    text-transform: uppercase;
   }
 }

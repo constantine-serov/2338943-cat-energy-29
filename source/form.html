@@ -23,9 +23,11 @@
     </div>
   </header>
   <main>
-    <section class="page__container form">
-      <h1 class="form__title title--base">Подбор программы</h1>
-      <p class="form__text text--form">Заполните анкету, и мы подберём<br>программу питания для вашего кота</p>
+    <section class="form">
+      <div class="page__container">
+        <h1 class="form__title title--base">Подбор программы</h1>
+        <p class="form__text text--form">Заполните анкету, и мы подберём<br>программу питания для вашего кота</p>
+      </div>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <div class="page__form-data-cat">
           <fieldset class="form-fieldset__container form-fieldset__container--data-cat">
@@ -65,7 +67,7 @@
           <div class="form-fieldset__container form-fieldset__container--additionally">
             <legend class="form-fieldset__container-legend">Дополнительно</legend>
             <label class="label-input label-input__checkbox">
-              <input class="visually-hidden" type="checkbox" name="sweetener">Сахарозаменитель
+              <input class="visually-hidden" type="checkbox" name="sweetener" checked>Сахарозаменитель
               <span class="input__checkbox-visually"></span>
             </label>
             <label class="label-input label-input__checkbox">
@@ -82,8 +84,10 @@
             </label>
           </div>
         </fieldset>
-        <button class="button-submit" type="submit">Отправить заявку</button>
-        <p class="form-footnote">* - Обязательные поля</p>
+        <div class="page__container">
+          <button class="button-submit" type="submit">Отправить заявку</button>
+          <p class="form-footnote">* - Обязательные поля</p>
+        </div>
       </form>
     </section>
     <section class="address">

@@ -2,13 +2,9 @@
   font-size: 20px;
   padding: 0;
 
-  // @media (min-width: 768px) {
-  //   padding: 0 70px 0;
-  // }
-
-  // @media (min-width: 1440px) {
-  //   padding: 0 110px 70px;
-  // }
+  @media (min-width: 1440px) {
+    padding-bottom: 79px;
+  }
 }
 
 .form__title {
@@ -30,7 +26,32 @@
 
 .form__text {
   @media (max-width: 767px) {
-    margin-bottom: 39px;
+    margin-bottom: 16px;
   }
 }
 
+.form-footnote {
+  display: inline-block;
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 16px;
+
+  padding: 0 82px 0;
+}
+
+.form__cat-description {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  font-family: "Oswald";
+  font-size: 20px;
+  text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    height: 150px;
+  }
+  @media (min-width: 768px) {
+    height: 174px;
+  }
+}

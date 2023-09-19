@@ -1,11 +1,16 @@
 .additional-products {
   position: relative;
   border-top: 2px solid #68B738;
+  margin: 0;
+
+  @media (max-width: 767px) {
+    padding: 20px;
+  }
 
   @media (min-width: 768px) and (max-width: 1439px) {
     padding-top: 10px;
-    padding-left: 80px;
-    margin-left: -40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: 1440px) {
@@ -14,12 +19,17 @@
 }
 
 .additional-products__wrapper {
+  position: relative;
+
   @media (min-width: 1440px) {
+
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
-    padding-top: 44px;
+    padding-top: 90px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -60,16 +70,20 @@
   }
 
   @media (min-width: 768px) and (max-width: 1439px) {
-    .promo-style(707px, 70px 125px 70px 420px, left);
-    background: url("../img/promo-background-tablet.jpg") no-repeat;
+    .promo-style(100%, 70px 125px 70px 420px, left);
+    min-height: 200px;
+    background:
+      url("../img/promo-background-tablet.jpg") no-repeat,
+      linear-gradient(to right, #5ca82d 0, #2e630e 100%);
     background-color: #68B738;
-    background-size: cover;
+    background-size: 707px 200px;
   }
 
   @media (min-width: 768px) and (max-width: 1439px) and (min-resolution: 2dppx) {
-    background: url("../img/promo-background-tablet@2x.jpg") no-repeat;
-    background-color: #68B738;
-    background-size: cover;
+    background: url("../img/promo-background-tablet@2x.jpg") no-repeat,
+    linear-gradient(to right, #5ca82d 0, #4e8d27 100%);
+  background-color: #68B738;
+  background-size: 707px 200px;
   }
 
   @media (min-width: 1440px) {

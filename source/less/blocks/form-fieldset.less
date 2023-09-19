@@ -7,6 +7,7 @@
 
 .form-fieldset__container {
   position: relative;
+  box-sizing: border-box;
 
   @media (max-width: 767px) {
     padding: 23px 20px 27px;
@@ -78,7 +79,7 @@
       box-sizing: border-box;
       gap: 18px;
       width: 570px;
-      padding: 24px 28px;
+      padding: 24px 28px 31px;
       margin: 0;
       justify-content: flex-start;
       align-items: flex-start;
@@ -98,10 +99,10 @@
 
     @media (min-width: 1440px) {
       display: grid;
+      justify-content: space-between;
       grid-template-columns: 570px 570px;
       gap: 80px;
-      padding-top: 71px;
-      padding-bottom: 75px;
+      padding: 87px 110px 92px 120px;
     }
   }
 
@@ -112,8 +113,8 @@
     }
 
     @media (min-width: 1440px) {
-      padding-top: 75px;
-      padding-bottom: 80px;
+      padding-top: 90px;
+      padding-bottom: 90px;
     }
   }
 
@@ -131,17 +132,19 @@
     }
 
     @media (min-width: 1440px) {
-      padding-top: 52px;
-      padding-bottom: 53px;
+      display: flex;
+      padding-top: 68px;
+      padding-bottom: 48px;
     }
   }
 }
 
 .form-fieldset__container-legend {
   position: absolute;
-  top: -20px;
+  top: -24px;
+  left: 70px;
 
-  font-family: Oswald;
+  font-family: "Oswald";
   font-size: 36px;
   line-height: 36px;
   background-color: #ffffff;
